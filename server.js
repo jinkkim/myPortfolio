@@ -17,7 +17,7 @@ app.set("view engine", "handlebars");
 
 //index.html --> index.handlebars
 app.get("/", function(req, res){
-    res.render("portfolio");
+    res.render("about");
 });
 
 //about.html --> about.handlebars
@@ -34,9 +34,6 @@ app.get("/portfolio", function(req, res){
 app.get("/contact", function(req, res){
     res.render("contact");
 });
-
-
-
 
 var PORT = process.env.PORT || 3000;
 app.listen(PORT, function(){
